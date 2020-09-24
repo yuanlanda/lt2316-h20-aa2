@@ -12,15 +12,15 @@ Name: *fill in your real name here* (if you don't want to use your real name wit
 
 ## Notes on Part 3.
 
-*fill in notes and documen
+*fill in notes and documentation for part 3 as mentioned in the assignment description*
 
 ## Notes on Part 4.
 
-*fill in notes and documen
+*fill in notes and documentation for part 4 as mentioned in the assignment description*
 
 ## Notes on Part 5.
 
-*fill in notes and documen
+*fill in notes and documentation for part 5 as mentioned in the assignment description*
 
 ## Notes on Part Bonus.
 
