@@ -1,4 +1,3 @@
-# ner_assignment
+# Assignment 2 : Ner Classification
 
-[Assignment 1](https://github.com/AxlAlm/ner_assignment/blob/ass2/assignment1.md)
-[Assignment 2](https://github.com/AxlAlm/ner_assignment/blob/ass2/assignment2.md)
+
