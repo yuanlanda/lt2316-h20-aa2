@@ -18,9 +18,6 @@ Name: *fill in your real name here* (if you don't want to use your real name wit
 
 *fill in notes and documentation for part 4 as mentioned in the assignment description*
 
-## Notes on Part 5.
-
-*fill in notes and documentation for part 5 as mentioned in the assignment description*
 
 ## Notes on Part Bonus.
 
