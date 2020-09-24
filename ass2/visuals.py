@@ -5,25 +5,28 @@ import pandas as pd
 import numpy as np
 from glob import glob
 
-def parallel_coordinates(model_save_dir, metric="loss"):
+def parallel_coordinates(save_dir, metric="loss"):
     # DO NOT CHANGE ANYTHING IN THIS FUNCTION
     # This function take a folder path and loads all model files,
     # extracts hyperparamaters and the given score, and creates a 
     # parallell coordination plot to display the scores for each hyperparamater
     
-    model_files = glob(model_save_dir+ "/*.pt")
+    model_files = glob(save_dir+ "/*.pt")
+    print("models found:", model_files)
     
     rows = []
     for model_file in model_files:
-        model_dict = checkpoint = torch.load(model_file)
-        hyperparamaters = model_dict["hyperparamaters"]
+        model_dict = torch.load(model_file)
+        score_dict = model_dict["scores"]
         score_dict["loss"] = model_dict["loss"]
-        score_dict.update(model_dict["hyperparamaters"])
 
-        row = hyperparamaters
+        row = {"model_name":model_dict["model_name"]}
+        row.update(model_dict["hyperparamaters"])
         row[metric] = score_dict[metric]
+
         rows.append(row)
 
+ 
     df = pd.DataFrame(rows)
 
     y_dims = []
@@ -64,5 +67,7 @@ def parallel_coordinates(model_save_dir, metric="loss"):
                                                     ),
                                         dimensions = y_dims,
                                     )
-                     )     
+                     )  
+    
+    fig.update_layout(margin=dict(l=120, r=30, b=20, t=40))
     fig.show()

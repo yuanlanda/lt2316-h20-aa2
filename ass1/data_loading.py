@@ -16,7 +16,7 @@ class DataLoaderBase:
                                                 "token_id",
                                                 "char_start_idx",
                                                 "char_end_idx",
-                                                "split"
+                                                "split" # e.g. TEST, TRAIN, VAL
                                                 ]
 
         assert list(self.ner_df.columns) == [
