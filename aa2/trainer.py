@@ -6,7 +6,7 @@ import torch
 class Trainer:
 
 
-    def __init__(self, dump_folder="/tmp/ass2_models/"):
+    def __init__(self, dump_folder="/tmp/aa2_models/"):
         self.dump_folder = dump_folder
         os.makedirs(dump_folder, exist_ok=True)
 
